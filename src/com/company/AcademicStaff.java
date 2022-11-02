@@ -48,4 +48,25 @@ public class AcademicStaff {
         this.rank=rank;
     }
 
+    /**
+     *
+     * @return Lastname
+     */
+    public String getLastName() {
+        return lastName;
+    }
+
+    /**
+     *
+     * @return name
+     */
+    public String getName() {
+        return name;
+    }
+
+    public String getFullName() {
+        return name+" "+lastName;
+    }
+
+
 }

@@ -45,7 +45,13 @@ public class Student {
         this.grade = grade;
         this.firstName = firsName;
         this.lastName = lastname;
-        this.id = id;
+        if (id<10000000&& id>999999){
+            this.id = id;
+        }else {
+            System.out.print("id should be 7 digit,it will be set to 111 til changed");
+            this.id = 111;
+        }
+
         this.degree=degree;
         this.grade=grade;
 
@@ -97,14 +103,19 @@ public class Student {
      * @param id
      */
     public void setId(int id){
-        this.id = id;
+        if (id<10000000&& id>999999){
+            this.id = id;
+            System.out.print("changed");
+        }else {
+            System.out.print("id should be 7 digit ,not accepted");
+        }
     }
 
     /**
      * method for printing students info
      */
     public void print() {
-        System.out.println("name: "+firstName + "  lastname: " +lastName+ "  ID: "+ id + "  degree: "+ degree);
+        System.out.println("name: "+firstName + "  lastname: " +lastName+ "  ID: "+ id + "  degree: "+ degree + "  grade: "+ grade);
     }
 
 
