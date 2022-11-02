@@ -62,11 +62,11 @@ public class AcademicStaff {
      */
     public String getName() {
         return name;
+
     }
 
     public String getFullName() {
         return name+" "+lastName;
     }
-
 
 }
